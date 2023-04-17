@@ -1,0 +1,137 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+}
+#container {
+    position: relative;
+    top: 80vh;
+}
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 8vw solid rgb(170, 26, 154);
+    box-sizing: border-box;
+    animation: expandCircle 2s cubic-bezier(.08,.82,.36,1.11);
+}
+.circle:nth-child(1) {
+    width:  10vw;
+    height: 10vw;
+}
+.circle:nth-child(2) {
+    width:  26vw;
+    height: 26vw;
+}
+.circle:nth-child(3) {
+    width:  70vw;
+    height: 70vw;
+}
+.circle:nth-child(4) {
+    width:  130vw;
+    height: 130vw;
+}
+.circle:nth-child(5) {
+    width:  190vw;
+    height: 190vw;
+}
+.circle:nth-child(6) {
+    width:  250vw;
+    height: 250vw;
+}
+
+@keyframes scale1 {
+    0% {
+        width: 10vw;
+        height: 10vw;
+    }
+    100% {
+        width: 26vw;
+        height: 26vw;
+    }
+}
+
+@keyframes scale2 {
+    0% {
+        width: 26vw;
+        height: 26vw;
+    }
+    100% {
+        width: 70vw;
+        height: 70vw;
+    }
+}
+
+@keyframes scale3 {
+    0% {
+        width: 70vw;
+        height: 70vw;
+    }
+    100% {
+        width: 130vw;
+        height: 130vw
+    }
+}
+
+@keyframes scale4 {
+    0% {
+        width: 130vw;
+        height: 130vw;
+    }
+    100% {
+        width: 190vw;
+        height: 190vw;
+    }
+}
+
+@keyframes scale5 {
+    0% {
+        width: 190vw;
+        height: 190vw;
+    }
+    100% {
+        width: 250vw;
+        height: 250vw;
+    }
+}
+
+@keyframes scale6 {
+    0% {
+        width: 250vw;
+        height: 250vw;
+    }
+    100% {
+        width: 350vw;
+        height: 350vw;
+    }
+}
+
+/* Apply the animations to the .circle elements using nth-child selector */
+.circle:nth-child(1) {
+    animation: scale1 1s cubic-bezier(.08,.82,.36,1.11) ;
+}
+
+.circle:nth-child(2) {
+    animation: scale2 1s cubic-bezier(.08,.82,.36,1.11) ;
+}
+
+.circle:nth-child(3) {
+    animation: scale3 1s cubic-bezier(.08,.82,.36,1.11) ;
+}
+
+.circle:nth-child(4) {
+    animation: scale4 1s cubic-bezier(.08,.82,.36,1.11) ;
+}
+
+.circle:nth-child(5) {
+    animation: scale5 1s cubic-bezier(.08,.82,.36,1.11) ;
+}
+
+.circle:nth-child(6) {
+    animation: scale6 1s cubic-bezier(.08,.82,.36,1.11) ;
+}
