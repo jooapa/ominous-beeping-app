@@ -148,7 +148,7 @@ body {
     animation: scale6 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
 }
 
-.play-button {
+#button {
     width: 64px;
     height: 64px;
     background-color: #c68e8e;
