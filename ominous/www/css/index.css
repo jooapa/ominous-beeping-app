@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(18, 20, 25);
     margin: 0;
     overflow: hidden;
     -webkit-touch-callout: none;
@@ -7,6 +7,7 @@ body {
 #container {
     position: relative;
     top: 80vh;
+    --time: 1s;
 }
 .circle {
     position: absolute;
@@ -16,33 +17,38 @@ body {
     width: 0;
     height: 0;
     border-radius: 50%;
-    border: 8vw solid rgb(170, 26, 154);
+    border: 8vw solid rgb(198, 81, 185);
     box-sizing: border-box;
-    animation: expandCircle 2s cubic-bezier(.08,.82,.36,1.11);
 }
 .circle:nth-child(1) {
     width:  10vw;
     height: 10vw;
+    border: 8vw solid rgb(198, 81, 185);
 }
 .circle:nth-child(2) {
     width:  26vw;
     height: 26vw;
+    border: 8vw solid rgb(198, 81, 185);
 }
 .circle:nth-child(3) {
     width:  70vw;
     height: 70vw;
+    border: 8vw solid rgb(156, 64, 146);
 }
 .circle:nth-child(4) {
     width:  130vw;
     height: 130vw;
+    border: 8vw solid rgb(146, 60, 136);
 }
 .circle:nth-child(5) {
     width:  190vw;
     height: 190vw;
+    border: 8vw solid rgb(119, 49, 111);
 }
 .circle:nth-child(6) {
     width:  250vw;
     height: 250vw;
+    border: 8vw solid rgb(95, 40, 89);
 }
 
 @keyframes scale1 {
@@ -53,6 +59,7 @@ body {
     100% {
         width: 26vw;
         height: 26vw;
+        border: 8vw solid rgb(198, 81, 185);
     }
 }
 
@@ -64,6 +71,7 @@ body {
     100% {
         width: 70vw;
         height: 70vw;
+        border: 8vw solid rgb(156, 64, 146);
     }
 }
 
@@ -74,7 +82,8 @@ body {
     }
     100% {
         width: 130vw;
-        height: 130vw
+        height: 130vw;
+        border: 8vw solid rgb(146, 60, 136);
     }
 }
 
@@ -86,6 +95,7 @@ body {
     100% {
         width: 190vw;
         height: 190vw;
+        border: 8vw solid rgb(119, 49, 111);
     }
 }
 
@@ -97,6 +107,7 @@ body {
     100% {
         width: 250vw;
         height: 250vw;
+        border: 8vw solid rgb(95, 40, 89);
     }
 }
 
@@ -106,32 +117,44 @@ body {
         height: 250vw;
     }
     100% {
-        width: 350vw;
-        height: 350vw;
+        width: 500vw;
+        height: 500vw;
+        border: 8vw solid rgb(42, 18, 39);
     }
 }
 
 /* Apply the animations to the .circle elements using nth-child selector */
 .circle:nth-child(1) {
-    animation: scale1 1s cubic-bezier(.08,.82,.36,1.11) ;
+    animation: scale1 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
 }
 
 .circle:nth-child(2) {
-    animation: scale2 1s cubic-bezier(.08,.82,.36,1.11) ;
+    animation: scale2 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
 }
 
 .circle:nth-child(3) {
-    animation: scale3 1s cubic-bezier(.08,.82,.36,1.11) ;
+    animation: scale3 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
 }
 
 .circle:nth-child(4) {
-    animation: scale4 1s cubic-bezier(.08,.82,.36,1.11) ;
+    animation: scale4 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
 }
 
 .circle:nth-child(5) {
-    animation: scale5 1s cubic-bezier(.08,.82,.36,1.11) ;
+    animation: scale5 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
 }
 
 .circle:nth-child(6) {
-    animation: scale6 1s cubic-bezier(.08,.82,.36,1.11) ;
+    animation: scale6 var(--time) cubic-bezier(.08,.82,.36,1.11) ;
+}
+
+.play-button {
+    width: 64px;
+    height: 64px;
+    background-color: #c68e8e;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
 }
