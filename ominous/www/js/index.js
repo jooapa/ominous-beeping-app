@@ -1,5 +1,7 @@
 time = '0.5s';
-document.getElementById('startButton').addEventListener('click', function() {
+intervalTime = time * 1000;
+
+function playAnimation() {
     var circles = document.getElementsByClassName('circle');
     for (var i = 0; i < circles.length; i++) {
       var circle = circles[i];
@@ -17,5 +19,14 @@ document.getElementById('startButton').addEventListener('click', function() {
         event.target.style.animationPlayState = '';
       }, { once: true }); // Use "once" option to remove the event listener after it has been triggered once
     }
-  });
-  
+}
+
+window.onload = function() {
+    infiniteAnimation();
+};
+function infiniteAnimation() {
+
+    setInterval(function() {
+        playAnimation();
+    }, intervalTime);
+}
