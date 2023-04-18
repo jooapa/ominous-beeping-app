@@ -1,6 +1,6 @@
 {
-  "name": "com.jooapa.oba",
-  "displayName": "HelloCordova",
+  "name": "com.jooapa.ominous",
+  "displayName": "ominous",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
@@ -11,13 +11,5 @@
     "ecosystem:cordova"
   ],
   "author": "Apache Cordova Team",
-  "license": "Apache-2.0",
-  "devDependencies": {
-    "cordova-browser": "^6.0.0"
-  },
-  "cordova": {
-    "platforms": [
-      "browser"
-    ]
-  }
+  "license": "Apache-2.0"
 }
