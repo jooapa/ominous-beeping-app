@@ -10,7 +10,7 @@ IF "%errorlevel%"=="4" (
     REM Initializing IOS
     cd ominous
     cordova platform add ios
-    cordova build ios
+    cordova run ios
     cmd.exe
 ) ELSE IF "%errorlevel%"=="3" (
     REM Initializing browser
@@ -23,12 +23,12 @@ IF "%errorlevel%"=="4" (
     REM Initializing electron
     cd ominous
     cordova platform add electron
-    cordova build electron
+    cordova run electron
     cmd.exe
 ) ELSE IF "%errorlevel%"=="1" (
     REM Initializing android
     cd ominous
     cordova platform add android
-    cordova build android
+    cordova run android
     cmd.exe
 )

@@ -2,7 +2,7 @@
   "name": "com.jooapa.ominous",
   "displayName": "ominous",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "ominous beeping app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,23 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
-  "license": "Apache-2.0"
+  "author": "Jooapa",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-browser": "^6.0.0",
+    "cordova-electron": "^3.1.0",
+    "cordova-plugin-background-mode": "^0.7.3",
+    "cordova-plugin-device": "^2.1.0"
+  },
+  "cordova": {
+    "platforms": [
+      "electron",
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-background-mode": {}
+    }
+  }
 }

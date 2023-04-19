@@ -4,6 +4,7 @@ body {
     overflow: hidden;
     -webkit-touch-callout: none;
 }
+
 #container {
     position: relative;
     display: grid;
@@ -31,7 +32,7 @@ body {
     height: 16vw;
     background-color: #fd92ff;
     border: none;
-    border-radius: 10px;
+    border-radius: 5vw;
     outline: none;
     cursor: pointer;
     position: absolute;
@@ -42,46 +43,88 @@ body {
     
 }
 
+.svg {
+    /* Properties from .svg class */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+.play {
+    background-image: url(../img/play.svg);
+
+}
+.pause {
+    background-image: url(../img/pause.svg);
+}
+.svg path {
+    fill: white;
+}
+
+:root {
+    --color-primary: rgb(193, 63, 143);
+
+}
+
 .circle:nth-child(1) {
-    width:  10vw;
+    width: 10vw;
     height: 10vw;
-    border: 8vw solid rgb(198, 81, 185);
+    border: 8vw solid var(--color-primary);
+    filter: brightness(1);
 }
+
 .circle:nth-child(2) {
-    width:  26vw;
+    width: 26vw;
     height: 26vw;
-    border: 8vw solid rgb(198, 81, 185);
+    border: 8vw solid var(--color-primary);
+    filter: brightness(0.9);
 }
+
 .circle:nth-child(3) {
-    width:  70vw;
+    width: 70vw;
     height: 70vw;
-    border: 8vw solid rgb(156, 64, 146);
+    border: 8vw solid var(--color-primary);
+    filter: brightness(0.8);
 }
+
 .circle:nth-child(4) {
-    width:  130vw;
+    width: 130vw;
     height: 130vw;
-    border: 8vw solid rgb(146, 60, 136);
+    border: 8vw solid var(--color-primary);
+    filter: brightness(0.7);
 }
+
 .circle:nth-child(5) {
-    width:  190vw;
+    width: 190vw;
     height: 190vw;
-    border: 8vw solid rgb(119, 49, 111);
+    border: 8vw solid var(--color-primary);
+    filter: brightness(0.5);
 }
+
 .circle:nth-child(6) {
-    width:  250vw;
+    width: 250vw;
     height: 250vw;
-    border: 8vw solid rgb(95, 40, 89);
+    border: 8vw solid var(--color-primary);
+    filter: brightness(0.4);
 }
 
 @keyframes scale1 {
     0% {
         width: 10vw;
         height: 10vw;
+        filter: brightness(1);
     }
     100% {
         width: 26vw;
         height: 26vw;
-        border: 8vw solid rgb(198, 81, 185);
+        border: 8vw solid var(--color-primary);
+        filter: brightness(0.9);
     }
 }
 
@@ -89,11 +132,13 @@ body {
     0% {
         width: 26vw;
         height: 26vw;
+        filter: brightness(0.9);
     }
     100% {
         width: 70vw;
         height: 70vw;
-        border: 8vw solid rgb(156, 64, 146);
+        border: 8vw solid var(--color-primary);
+        filter: brightness(0.8);
     }
 }
 
@@ -101,11 +146,13 @@ body {
     0% {
         width: 70vw;
         height: 70vw;
+        filter: brightness(0.8);
     }
     100% {
         width: 130vw;
         height: 130vw;
-        border: 8vw solid rgb(146, 60, 136);
+        border: 8vw solid var(--color-primary);
+        filter: brightness(0.7);
     }
 }
 
@@ -113,11 +160,13 @@ body {
     0% {
         width: 130vw;
         height: 130vw;
+        filter: brightness(0.7);
     }
     100% {
         width: 190vw;
         height: 190vw;
-        border: 8vw solid rgb(119, 49, 111);
+        border: 8vw solid var(--color-primary);
+        filter: brightness(0.5);
     }
 }
 
@@ -125,11 +174,13 @@ body {
     0% {
         width: 190vw;
         height: 190vw;
+        filter: brightness(0.5);
     }
     100% {
         width: 250vw;
         height: 250vw;
-        border: 8vw solid rgb(95, 40, 89);
+        border: 8vw solid var(--color-primary);
+        filter: brightness(0.4);
     }
 }
 
@@ -137,12 +188,14 @@ body {
     0% {
         width: 250vw;
         height: 250vw;
+        filter: brightness(0.4);
     }
     100% {
         width: 400vw;
         height: 400vw;
-        border: 8vw solid rgba(42, 18, 39, 0);
+        border: 8vw solid var(--color-primary);
+        filter: brightness(0.2);
+        opacity: 0;
+        
     }
 }
-
-

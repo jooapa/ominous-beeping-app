@@ -1,4 +1,4 @@
-time = '0.5s';
+time = '2s';
 intervalTime = time * 1000;
 
 function playAnimation() {
@@ -30,3 +30,16 @@ function infiniteAnimation() {
         playAnimation();
     }, intervalTime);
 }
+
+document.getElementById("startButton").addEventListener("click", function() {
+  var icon = this.querySelector("i");
+  if (icon.classList.contains("play")) {
+    // Switch to pause icon
+    icon.classList.remove("play");
+    icon.classList.add("pause");
+  } else {
+    // Switch to play icon
+    icon.classList.remove("pause");
+    icon.classList.add("play");
+  }
+});
