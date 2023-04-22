@@ -9,7 +9,7 @@ function playAnimation(time) {
     circle.style.animationName = 'scale' + (i + 1);
     circle.style.animationDuration = time;
     circle.style.animationTimingFunction = 'cubic-bezier(.08,.82,.36,1.11)';
-    circle.style.animationPlayState = 'running';
+    // circle.style.animationPlayState = 'running';
     circle.style.animationIterationCount = 'infinite'; // Set animation iteration count to 'infinite'
   }
 

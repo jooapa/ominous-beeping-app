@@ -24,9 +24,6 @@
       "electron",
       "browser",
       "android"
-    ],
-    "plugins": {
-      "cordova-plugin-background-mode": {}
-    }
+    ]
   }
 }

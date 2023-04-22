@@ -1,4 +1,4 @@
-body {
+html, body {
     background-color: rgb(18, 20, 25);
     margin: 0;
     overflow: hidden;
@@ -67,13 +67,12 @@ body {
 
 :root {
     --color-primary: rgb(193, 63, 143);
-
 }
 
 .circle:nth-child(1) {
     width: 10vw;
     height: 10vw;
-    border: 8vw solid var(--color-primary);
+    border: 12vw solid var(--color-primary);
     filter: brightness(1);
 }
 
